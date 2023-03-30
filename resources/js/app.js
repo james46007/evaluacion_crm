@@ -1,3 +1,5 @@
+import ArrayMain from "./components/ArrayMain.vue";
+
 require('./bootstrap');
 require('alpinejs');
 import useValidate from '@vuelidate/core';
@@ -54,6 +56,7 @@ app.use(PrimeVue);
 app.use(ToastService);
 app.use(VueAxios, axios);
 app.use(useValidate);
+app.component('ArrayMain', ArrayMain);
 app.component('CampaingsMain', CampaingsMain);
 app.component('CouponsMain', CouponsMain);
 app.component('Calendar', Calendar);
